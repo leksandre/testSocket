@@ -14,7 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
-
+//    private static final String TAGs = "MyActivity";
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -35,6 +35,7 @@ class MainActivity : ComponentActivity() {
     override fun onStart(
 
     ){
+        super.onStart()
         var message1: String
         var tag: String = "tag"
         message1 ="onStart"
@@ -46,6 +47,7 @@ class MainActivity : ComponentActivity() {
     }
 
     override fun onRestart(){
+        super.onRestart()
         var tag: String
         var message1: String
         tag = "tag"
@@ -58,6 +60,7 @@ class MainActivity : ComponentActivity() {
     }
 
     override fun onResume(){
+        super.onResume()
         var tag: String
         var message1: String
         tag = "tag"
@@ -70,6 +73,7 @@ class MainActivity : ComponentActivity() {
     }
 
     override fun onPause(){
+        super.onPause()
         var tag: String
         var message1: String
         tag = "tag"
@@ -82,6 +86,7 @@ class MainActivity : ComponentActivity() {
     }
 
     override fun onStop(){
+        super.onStop()
         var tag: String
         var message1: String
         tag = "tag"
@@ -94,6 +99,7 @@ class MainActivity : ComponentActivity() {
     }
 
     override fun onDestroy(){
+        super.onDestroy()
         var tag: String
         var message1: String
         tag = "tag"
